@@ -1,6 +1,6 @@
-# HandsONmack
+# XPTO Data Consulting
 
-- Quem somos: 
+- #Quem somos#: A XPTO Consultoria de Dados é uma empresa especializada em transformar dados em insights estratégicos para grandes organizações. Ajudamos nossos clientes a otimizar processos, melhorar a tomada de decisões e impulsionar a inovação. 
 
 - Definição do problema: Corretores de investimentos com problemas de atualização de valores de carteira dos clientes 
 
