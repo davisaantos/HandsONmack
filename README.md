@@ -1,6 +1,5 @@
 # :rocket: XPTO Data Consulting :rocket:
 
----
 **- Grupo:**
 | Nome               | RA |
 | -------------      | ---------- |
