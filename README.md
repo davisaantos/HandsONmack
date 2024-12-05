@@ -1,6 +1,7 @@
 # :rocket: XPTO Data Consulting :rocket:
 
-** Grupo:**
+## Grupo
+
 | Nome               | RA |
 | -------------      | ---------- |
 | Aline Couto        | 10206399   |
