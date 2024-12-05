@@ -9,6 +9,9 @@
 | Cristian Barros    | 10444616   |
 | Davi Santos        | 10444890   |
 
+## Link Trelho
+https://trello.com/b/dCeSl1NL/mba-hands-on-eng-dados
+
 ---
 ## Quem somos
 A XPTO Consultoria de Dados é uma empresa especializada em transformar dados em insights estratégicos para grandes organizações. Ajudamos nossos clientes a otimizar processos, melhorar a tomada de decisões e impulsionar a inovação. 
@@ -26,8 +29,8 @@ O problema enfrentado por corretores de investimentos é a dificuldade em manter
 ---
 
 ## Proposta de Solução
-https://app.diagrams.net/#G16HrKbhdi_7C9fi0To450gG1UoPsjGQz8#%7B%22pageId%22%3A%22PagMvPy4eKuHwGBP5d_m%22%7D
-- ![image](https://github.com/user-attachments/assets/9744159a-656b-45fe-baab-fa8f38dd6d35)
+![image](https://github.com/user-attachments/assets/eb358a6e-cee1-47cb-828a-0d11e5f5cd31)
+
 
 Este diagrama descreve uma solução de processamento e análise de dados baseada em serviços da AWS, organizados em duas camadas: Batch Layer (camada de processamento em lote) e Speed Layer (camada de baixa latência). A seguir, uma descrição detalhada:
 
