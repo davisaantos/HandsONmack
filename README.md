@@ -19,7 +19,7 @@ A XPTO Consultoria de Dados é uma empresa especializada em transformar dados em
 ---
 
 ## Definição do problema
-  Corretores de investimentos com problemas de atualização de valores de carteira dos clientes 
+  Corretores de investimentos com problemas de atualização e acompanhamento de valores de carteira dos clientes 
 
 ---
 
