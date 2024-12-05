@@ -71,20 +71,47 @@ As análises finais são disponibilizadas para os usuários em dashboards no Qui
 
 # Plano de Trabalho do time
 
-### Sprint 1 (30/10 a 06/11)
-- [X] Criar repositório 
-- [X] Download do dataset
-- [X] Subir dataset no repositório
+### Sprint 1 
+- [X] Definição do problema
+- [X] Escolha da base de dados
+- [X] Desenho de arquitetura
 - [X] Configuração do Streamlit
-- [X] Início do desenvolvimento
+- [X] Escolha do Stack de Ferramentas
 
-### Sprint 2 (07/11 a 13/11)
-- [X] Desenvolvimento
-- [X] Ajustes nas visões
-- [X] Geração das visões- gráficos
+### Sprint 2 
+- [X] Criação do kanban(tarefas e responsáveis)
+- [X] Modelagem das camadas de dados
 
-### Sprint 3 (14/11 a 20/11)
-- [ ] Ajustes finais
-- [ ] Documentação
-- [ ] Apresentação final
-Esse design combina processamento em lote e em tempo real, garantindo flexibilidade e eficiência para atender a diferentes necessidades analíticas.
+### Sprint 3 
+- [ ] Definição MVP
+- [ ] Planner MVP
+- [ ] Levantamento de requisitos
+- [ ] Preparação ambiente
+
+### Sprint 4
+- [ ] Análise e Design
+- [ ] Configuração
+- [ ] Desenvolvimento
+- [ ] Teste e validação
+
+### Sprint 5
+- [ ] Análise e Design
+- [ ] Configuração
+- [ ] Desenvolvimento
+- [ ] Teste e validação
+
+### Sprint 6
+- [ ] Análise e Design
+- [ ] Configuração
+- [ ] Desenvolvimento
+- [ ] Teste e validação
+- [ ] Apresentação Final
+
+
+
+### Critério de Avaliação:
+- Proposição para mercado prático
+- Detalhamento técnico Arquitetura
+- Demonstração Funcional MVP
+- Documentação Entregue, Git Hub
+- Utilização Ferramentas Big Data
