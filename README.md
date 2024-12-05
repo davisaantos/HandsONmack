@@ -6,8 +6,8 @@
 | -------------      | ---------- |
 | Aline Couto        | 10206399   |
 | Carolina Attili    | 10369043   |
-| Cristian Barros    | xxxxxxxx   |
-| Davi Santos        | xxxxxxxx   |
+| Cristian Barros    | 10444616   |
+| Davi Santos        | 10444890   |
 
 ---
 ## Quem somos
