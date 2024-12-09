@@ -93,18 +93,6 @@ As análises finais são disponibilizadas para os usuários em dashboards no Qui
 - [ ] Configuração
 - [ ] Desenvolvimento
 - [ ] Teste e validação
-
-### Sprint 5
-- [ ] Análise e Design
-- [ ] Configuração
-- [ ] Desenvolvimento
-- [ ] Teste e validação
-
-### Sprint 6
-- [ ] Análise e Design
-- [ ] Configuração
-- [ ] Desenvolvimento
-- [ ] Teste e validação
 - [ ] Apresentação Final
 
 
