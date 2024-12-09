@@ -29,7 +29,8 @@ O problema enfrentado por corretores de investimentos é a dificuldade em manter
 ---
 
 ## Proposta de Solução
-![image](https://github.com/user-attachments/assets/eb358a6e-cee1-47cb-828a-0d11e5f5cd31)
+
+![image](https://github.com/user-attachments/assets/566f9c61-71f7-47c2-8d47-2cca73fe474a)
 
 (EM ATUALIZAÇÂO)
 Este diagrama descreve uma solução de processamento e análise de dados baseada em serviços da AWS, organizados em duas camadas: Batch Layer (camada de processamento em lote) e Speed Layer (camada de baixa latência). A seguir, uma descrição detalhada:
