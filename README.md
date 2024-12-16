@@ -9,8 +9,6 @@
 | Cristian Barros    | 10444616   |
 | Davi Santos        | 10444890   |
 
-## Link Trelho
-https://trello.com/b/dCeSl1NL/mba-hands-on-eng-dados
 
 ---
 ## Quem somos
@@ -32,7 +30,6 @@ O problema enfrentado por corretores de investimentos é a dificuldade em manter
 
 ![image](https://github.com/user-attachments/assets/79d68545-36f2-4ffc-b257-9ddd97fb2c56)
 
-(EM ATUALIZAÇÂO)
 Este diagrama descreve uma solução de processamento e análise de dados baseada em serviços da AWS, organizados em duas camadas: Batch Layer (camada de processamento em lote) e Speed Layer (camada de baixa latência). A seguir, uma descrição detalhada:
 
 Batch Layer (Camada de Processamento em Lote):
@@ -69,8 +66,11 @@ Dados refinados são armazenados no Redshift para análises detalhadas ou no S3 
 As análises finais são disponibilizadas para os usuários em dashboards no QuickSight.
 
 ---
+## Gestão do projeto 
 
-# Plano de Trabalho do time
+Utilizamos o Trellho para fazer a organização e distribuição das tarefas do projeto por sprints.
+https://trello.com/b/dCeSl1NL/mba-hands-on-eng-dados
+
 
 ### Sprint 1 
 - [X] Definição do problema
@@ -84,17 +84,21 @@ As análises finais são disponibilizadas para os usuários em dashboards no Qui
 - [X] Modelagem das camadas de dados
 
 ### Sprint 3 
-- [ ] Definição MVP
-- [ ] Planner MVP
-- [ ] Levantamento de requisitos
-- [ ] Preparação ambiente
+- [X] Definição MVP
+- [X] Planner MVP
+- [X] Levantamento de requisitos
+- [X] Preparação ambiente
 
 ### Sprint 4
-- [ ] Análise e Design
-- [ ] Configuração
-- [ ] Desenvolvimento
-- [ ] Teste e validação
-- [ ] Apresentação Final
+- [X] Análise e Design
+- [X] Configuração
+- [X] Desenvolvimento
+- [X] Teste e validação
+- [X] Apresentação Final
+
+
+### Calculadora de custo:
+
 
 
 
