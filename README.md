@@ -90,8 +90,8 @@ https://trello.com/b/dCeSl1NL/mba-hands-on-eng-dados
 
 
 ### Calculadora de custo:
-
-
+Foi realizada a simulação de custos para manter o MVP deste projeto, considerando os recursos da AWS utilizados:
+Lambda, Glue, Athena 
 
 
 ### Critério de Avaliação:
