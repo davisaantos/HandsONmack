@@ -59,7 +59,7 @@ As análises finais são disponibilizadas para os usuários em dashboards no Qui
 ---
 ## Gestão do projeto 
 
-Utilizamos o Trellho para fazer a organização e distribuição das tarefas do projeto por sprints. \n
+Utilizamos o Trellho para fazer a organização e distribuição das tarefas do projeto por sprints. 
 https://trello.com/b/dCeSl1NL/mba-hands-on-eng-dados
 
 
