@@ -84,6 +84,7 @@ https://trello.com/b/dCeSl1NL/mba-hands-on-eng-dados
 - [X] Análise e Design
 - [X] Configuração
 - [X] Desenvolvimento
+- [X] Calculadora de Custos
 - [X] Teste e validação
 - [X] Apresentação Final
 
