@@ -28,7 +28,9 @@ O problema enfrentado por corretores de investimentos é a dificuldade em manter
 
 ## Proposta de Solução
 
-![image](https://github.com/user-attachments/assets/9bd8a7ff-06f7-4093-b1b5-4562a75b92a3)
+
+![solution](https://github.com/user-attachments/assets/3e00ffb6-f72d-4b5c-a708-356c311e785c)
+
 
 Este diagrama descreve uma solução de processamento e análise de dados baseada em serviços da AWS, organizados em duas camadas: Batch Layer (camada de processamento em lote) e Speed Layer (camada de baixa latência). A seguir, uma descrição detalhada.
 
@@ -46,8 +48,8 @@ Realiza a transformação e o tratamento dos dados. É configurado para organiza
 Bronze: Dados brutos armazenados em formato CSV no S3.
 Silver: Dados parcialmente processados e transformados em formato Parquet, no S3.
 Gold: Dados finais refinados também armazenados em formato Parquet, no S3.
-Amazon Athena:
 
+Amazon Athena:
 Serviço de consulta interativa que permite explorar diretamente os dados armazenados no S3. Útil para relatórios ou consultas ad-hoc sem necessidade de carregamento de dados para outro sistema.
 
 Fluxo Geral:
@@ -59,7 +61,7 @@ As análises finais são disponibilizadas para os usuários em dashboards no Qui
 ---
 ## Gestão do projeto 
 
-Utilizamos o Trellho para fazer a organização e distribuição das tarefas do projeto por sprints. 
+Utilizamos o Trello para fazer a organização e distribuição das tarefas do projeto por sprints. 
 https://trello.com/b/dCeSl1NL/mba-hands-on-eng-dados
 
 
