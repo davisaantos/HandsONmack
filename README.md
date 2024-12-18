@@ -31,32 +31,97 @@ O problema enfrentado por corretores de investimentos é a dificuldade em manter
 ![image](https://github.com/user-attachments/assets/642b51f2-4a30-4f74-b795-e5399c4c5517)
 
 
-Este diagrama descreve uma solução de processamento e análise de dados baseada em serviços da AWS, organizados em duas camadas: Batch Layer (camada de processamento em lote) e Speed Layer (camada de baixa latência). A seguir, uma descrição detalhada.
+---
 
-Batch Layer (Camada de Processamento em Lote):
-Fontes de Dados:
+## **Estrutura da Solução**
 
-API Yahoo Finance: Fonte externa para aquisição de dados financeiros.
-CSV Cliente: Arquivos CSV contendo dados enviados pelos clientes.
+## **Fontes de Dados**
+As fontes de dados utilizadas são as seguintes:
 
+- **API Yahoo Finance**: Dados financeiros.
+- **CSV Cliente**: Dados cadastrais dos clientes.
+- **CSV Componentes Nasdaq100**: Informações dos componentes do índice Nasdaq100.
 
-AWS Lambda:
-Responsável por orquestrar a ingestão de dados. Invoca o serviço AWS Glue para processar e transformar os dados recebidos.
+---
 
-AWS Glue:
-Realiza a transformação e o tratamento dos dados. É configurado para organizar os dados em diferentes níveis:
-Bronze: Dados brutos armazenados em formato CSV no S3.
-Silver: Dados parcialmente processados e transformados em formato Parquet, no S3.
-Gold: Dados finais refinados também armazenados em formato Parquet, no S3.
+## **Pipeline de Dados**
+O pipeline segue a **Medallion Architecture**, estruturada em três camadas:
 
-Amazon Athena:
-Serviço de consulta interativa que permite explorar diretamente os dados armazenados no S3. Útil para relatórios ou consultas ad-hoc sem necessidade de carregamento de dados para outro sistema.
+### **1. Camada Bronze (RAW)**
+- **Objetivo**: Preservação dos dados brutos e originais.
+- **Formato**: CSV armazenado no **Amazon S3**.
+- **Job**: `Origem_RAW.py`
+- **Características**:
+  - Captura fiel dos dados.
+  - Armazenamento seguro no formato bruto.
 
-Fluxo Geral:
-Dados são coletados de fontes externas (API e CSV).
-Lambda e Glue transformam os dados em diferentes camadas de maturidade (Bronze, Silver, Gold).
-Dados refinados são armazenados no Athena para análises detalhadas.
-As análises finais são disponibilizadas para os usuários em dashboards no QuickSight.
+---
+
+### **2. Camada Silver**
+- **Objetivo**: Transformação, limpeza e consolidação dos dados.
+- **Formato**: Dados convertidos para **Parquet**.
+- **Job**: `RAW_TO_SLV.py`
+- **Transformações Realizadas**:
+  - Conversão de tipos e limpeza de dados.
+  - **Junção** de tabelas de clientes, componentes e cotações.
+  - Cálculo de métricas básicas:
+    - `ValorTotalAtivo`
+    - `PatrimonioTotal`
+
+---
+
+### **3. Camada Gold**
+- **Objetivo**: Dados agregados e prontos para análises.
+- **Formato**: Parquet, com **particionamento otimizado**.
+- **Job**: `SLV_TO_GLD.py`
+- **Características**:
+  - Cálculo de métricas analíticas por cliente.
+  - Adição de **metadados** para otimizar consultas (ex.: data, ano, mês).
+
+---
+
+## **Consumo de Dados**
+Os dados refinados são consumidos e visualizados através das seguintes ferramentas:
+
+- **Amazon Athena**: 
+  - Permite **consultas SQL interativas** diretamente sobre os dados no **Amazon S3**.
+  - Elimina a necessidade de provisionar infraestrutura fixa.
+
+- **Amazon QuickSight**:
+  - **Dashboards e visualizações interativas** baseadas nos dados consultados pelo Athena.
+  - Facilita a entrega rápida de **insights acionáveis** para os usuários.
+
+---
+
+## **Ferramentas AWS**
+A solução utiliza os seguintes serviços da AWS:
+
+- **AWS Glue**: Pipeline ETL para transformação e processamento dos dados.
+- **Amazon S3**: Armazenamento centralizado e escalável das camadas **Bronze**, **Silver** e **Gold**.
+- **Amazon Athena**: Consultas ad-hoc e análises SQL diretamente no S3.
+- **Amazon QuickSight**: Visualização dos dados em dashboards intuitivos.
+
+---
+
+## **Fluxo Geral**
+O fluxo de dados segue as etapas abaixo:
+
+1. **Ingestão de Dados**:
+   - Dados são coletados de fontes externas (**API Yahoo Finance** e **arquivos CSV**).
+
+2. **Processamento**:
+   - **AWS Lambda** aciona o **AWS Glue** para realizar a transformação dos dados.
+   - Dados são organizados em camadas de maturidade:
+     - **Bronze**: Dados brutos.
+     - **Silver**: Dados transformados e consolidados.
+     - **Gold**: Dados agregados e prontos para análise.
+
+3. **Armazenamento**:
+   - Todas as camadas são armazenadas no **Amazon S3** em formatos otimizados.
+
+4. **Consulta e Visualização**:
+   - **Amazon Athena** realiza consultas diretas no S3.
+   - **Amazon QuickSight** entrega **dashboards interativos** com análises finais.
 
 ---
 ## Gestão do projeto 
