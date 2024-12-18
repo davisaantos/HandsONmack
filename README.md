@@ -39,11 +39,12 @@ Fontes de Dados:
 
 API Yahoo Finance: Fonte externa para aquisição de dados financeiros.
 CSV Cliente: Arquivos CSV contendo dados enviados pelos clientes.
+
+
 AWS Lambda:
-
 Responsável por orquestrar a ingestão de dados. Invoca o serviço AWS Glue para processar e transformar os dados recebidos.
-AWS Glue:
 
+AWS Glue:
 Realiza a transformação e o tratamento dos dados. É configurado para organizar os dados em diferentes níveis:
 Bronze: Dados brutos armazenados em formato CSV no S3.
 Silver: Dados parcialmente processados e transformados em formato Parquet, no S3.
